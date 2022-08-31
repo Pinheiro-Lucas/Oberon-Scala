@@ -1,0 +1,6 @@
+MODULE SimpleModule12;
+
+CONST
+  x = NIL;
+
+END SimpleModule12.

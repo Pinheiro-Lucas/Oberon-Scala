@@ -1214,4 +1214,12 @@ class CoreTransformerTest extends AbstractTestSuite {
       "Case must be transformed to IfElseStmt using new variable"
     )
   }
+
+    test("Testing a basic NULL (NIL) variable") {
+    val module = ScalaParser.parseResource("simple/simple12.oberon")
+
+    assert(module.constants.size == 1)
+    assert(module.constants.head == Constant("x", NullValue))
+
+  }
 }
